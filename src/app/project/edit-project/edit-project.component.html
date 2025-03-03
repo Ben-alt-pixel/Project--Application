@@ -1,0 +1,61 @@
+<div class="container">
+  <mat-card class="auth-card">
+    <mat-card-title>Edit Project</mat-card-title>
+    <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" required />
+        <mat-error
+          *ngIf="
+            projectForm.get('title')?.invalid &&
+            projectForm.get('title')?.touched
+          "
+        >
+          Title is required.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="mt-4">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description" required></textarea>
+        <mat-error
+          *ngIf="
+            projectForm.get('description')?.invalid &&
+            projectForm.get('description')?.touched
+          "
+        >
+          Description is required.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="mt-4">
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="status" required>
+          <mat-option value="in-progress">In Progress</mat-option>
+          <mat-option value="completed">Completed</mat-option>
+          <mat-option value="pending">Pending</mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="
+            projectForm.get('status')?.invalid &&
+            projectForm.get('status')?.touched
+          "
+        >
+          Status is required.
+        </mat-error>
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        class="mt-4"
+        [disabled]="projectForm.invalid"
+      >
+        Save Changes
+      </button>
+      <button mat-raised-button class="cancel-btn" (click)="onCancel()">
+        Cancel
+      </button>
+    </form>
+  </mat-card>
+</div>
