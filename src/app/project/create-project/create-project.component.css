@@ -1,35 +1,160 @@
-.create-project-container {
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #F0E193; /* Golden Sand */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.auth-card {
-  max-width: 450px;
+/* Create Project Container Styling */
+.create-project-container {
+  max-width: 500px;
   width: 100%;
   padding: 20px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Auth Card Styling */
+.auth-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Border Decoration */
+.auth-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 4px solid #5C0E14; /* Deep Burgundy */
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* Title Styling */
+mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5C0E14; /* Deep Burgundy */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Container Styling */
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
+/* Full Width Input Fields */
 .full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.mat-form-field {
   width: 100%;
 }
 
+.mat-label {
+  font-size: 14px;
+  color: #5C0E14; /* Deep Burgundy */
+}
+
+input.mat-input-element,
+textarea.mat-input-element {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #F0E193; /* Golden Sand */
+  color: #5C0E14; /* Deep Burgundy */
+  border: none;
+}
+
+input.mat-input-element:focus,
+textarea.mat-input-element:focus {
+  outline: 2px solid #5C0E14; /* Deep Burgundy focus */
+}
+
+.mat-error {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: 4px;
+}
+
+/* Select Dropdown Styling */
+.mat-select {
+  width: 100%;
+  padding: 8px;
+  background-color: #F0E193; /* Golden Sand */
+  color: #5C0E14; /* Deep Burgundy */
+  border: none;
+}
+
+.mat-select-arrow {
+  color: #5C0E14; /* Deep Burgundy */
+}
+
+/* Button Group Styling */
 .button-group {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-button {
-  width: 48%;
+button.mat-raised-button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 24px; /* Rounded button */
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+button.mat-primary {
+  background-color: #5C0E14; /* Deep Burgundy */
+  color: #F0E193; /* Golden Sand */
+}
+
+button.mat-primary:hover:not([disabled]) {
+  background-color: #7A1B26; /* Darker shade of Deep Burgundy */
+}
+
+button.mat-button {
+  background-color: transparent;
+  color: #5C0E14; /* Deep Burgundy */
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.mat-button:hover {
+  background-color: #F0E193; /* Golden Sand */
+  color: #5C0E14; /* Deep Burgundy */
+}
+
+button.mat-warn {
+  color: #d32f2f; /* Warning Red */
+  font-weight: bold;
+}
+
+button.mat-warn:hover {
+  background-color: #ffebee; /* Light Red Background */
+  color: #d32f2f; /* Warning Red */
 }
