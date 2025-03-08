@@ -5,32 +5,33 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: #F0E193; /* Golden Sand */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+::ng-deep body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #4cab72;
   min-height: 100vh;
   margin: 0;
 }
 
 /* Container Styling */
 .container {
-  max-width: 400px;
+  min-height: 100vh;
   width: 100%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for contrast */
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Auth Card Styling */
 .auth-card {
-  background-color: #ffffff;
+  background: url("/leaves.jpg") #4cab72;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+  display: flex;
+  justify-content: center;
   border-radius: 16px;
   padding: 24px;
-  position: relative;
 }
 
 /* Title Styling */
@@ -38,22 +39,17 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  color: #5C0E14; /* Deep Burgundy */
+  color: white;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
-/* Custom Border Decoration */
-.auth-card::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  border: 4px solid #5C0E14; /* Deep Burgundy */
-  border-radius: 20px;
-  z-index: -1;
+form {
+  width: 50%;
+  border: 2px solid white;
+  padding: 100px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
 /* Form Field Styling */
@@ -61,29 +57,23 @@ body {
   width: 100%;
 }
 
-.mat-form-field {
+mat-form-field {
   margin-bottom: 16px;
 }
 
-.mat-label {
-  font-size: 14px;
-  color: #5C0E14; /* Deep Burgundy */
-}
-
-input.mat-input-element {
-  font-size: 16px;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #F0E193; /* Golden Sand */
-  color: #5C0E14; /* Deep Burgundy */
+mat-form-field input {
   border: none;
+  border-bottom: 2px solid white;
+  padding: 2px 5px;
+  color: white !important;
 }
 
-input.mat-input-element:focus {
-  outline: 2px solid #5C0E14; /* Deep Burgundy focus */
+mat-label {
+  font-size: 14px;
+  color: white;
 }
 
-.mat-error {
+mat-error {
   font-size: 12px;
   color: #d32f2f;
   margin-top: 4px;
@@ -101,12 +91,13 @@ button.mat-raised-button {
 }
 
 button.mat-primary {
-  background-color: #5C0E14; /* Deep Burgundy */
-  color: #F0E193; /* Golden Sand */
+  background-color: #4cab72;
+  color: white;
+  border-radius: 10px;
 }
 
 button.mat-primary:hover:not([disabled]) {
-  background-color: #7A1B26; /* Darker shade of Deep Burgundy */
+  background-color: #7a1b26;
 }
 
 button.mat-raised-button[disabled] {
@@ -117,12 +108,12 @@ button.mat-raised-button[disabled] {
 /* Sign Up Link Styling */
 .text-center span {
   font-size: 14px;
-  color: #5C0E14; /* Deep Burgundy */
+  color: white;
 }
 
 .text-center a {
   font-size: 14px;
-  color: #5C0E14; /* Deep Burgundy */
+  color: #4cab72;
   text-decoration: none;
   font-weight: bold;
   margin-left: 4px;
@@ -130,7 +121,7 @@ button.mat-raised-button[disabled] {
 }
 
 .text-center a:hover {
-  color: #7A1B26; /* Darker shade of Deep Burgundy */
+  color: #7a1b26; /* Darker shade of Deep Burgundy */
 }
 
 /* Spacing Classes */
