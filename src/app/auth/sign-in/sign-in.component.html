@@ -1,8 +1,7 @@
 <div class="container">
   <mat-card class="auth-card">
-    <mat-card-title class="text-center">Sign In</mat-card-title>
-
     <form [formGroup]="signInForm" (ngSubmit)="onSignIn()">
+      <mat-card-title class="text-center">Welcome</mat-card-title>
       <!-- Email Field -->
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Email</mat-label>
@@ -39,12 +38,12 @@
       >
         Sign In
       </button>
-    </form>
 
-    <!-- Sign Up Link -->
-    <div class="text-center mt-4">
-      <span>Don't have an account?</span>
-      <a routerLink="/sign-up">Sign Up</a>
-    </div>
+      <!-- Sign Up Link -->
+      <div class="text-center mt-4">
+        <span>Don't have an account?</span>
+        <a routerLink="/sign-up">Sign Up</a>
+      </div>
+    </form>
   </mat-card>
 </div>
