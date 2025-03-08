@@ -7,19 +7,17 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background-color: #F0E193; /* Golden Sand */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: blue; /* Golden Sand */
   margin: 0;
 }
 
 /* Create Project Container Styling */
 .create-project-container {
-  max-width: 500px;
-  width: 100%;
-  padding: 20px;
+  width: 10v0w;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Auth Card Styling */
@@ -28,6 +26,8 @@ body {
   border-radius: 16px;
   padding: 24px;
   position: relative;
+  width: 40rem;
+  height: 30rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -102,6 +102,7 @@ textarea.mat-input-element:focus {
   background-color: #F0E193; /* Golden Sand */
   color: #5C0E14; /* Deep Burgundy */
   border: none;
+  z-index: 100;
 }
 
 .mat-select-arrow {
@@ -123,6 +124,7 @@ button.mat-raised-button {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  z-index: 10;
 }
 
 button.mat-primary {
