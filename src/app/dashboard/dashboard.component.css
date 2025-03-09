@@ -6,8 +6,8 @@
 
 .dashboard-card {
   width: 80%;
-  background-color: #5C0E14;
-  color: #F0E193;
+  background-color: #4cab72; /* Using the green from the first CSS */
+  color: white; /* White text for contrast */
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -31,11 +31,17 @@
     margin-bottom: 20px;
 
     button {
-      background-color: #F0E193;
-      color: #5C0E14;
+      background-color: #ffffff; /* White buttons */
+      color: #4cab72; /* Green text */
       font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+
       &:hover {
-        background-color: darken(#F0E193, 10%);
+        background-color: #7a1b26; /* Darker green on hover */
+        color: white; /* White text on hover */
       }
     }
   }
@@ -51,32 +57,31 @@
     }
 
     .project-card {
-      background-color: #F0E193;
-      color: #5C0E14;
+      background-color: #ffffff; /* White background for cards */
+      color: #4cab72; /* Green text */
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       height: 12rem;
     }
 
-      mat-card-title {
-        font-size: 18px;
-        font-weight: bold;
-      }
+    mat-card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-      .status {
-        font-weight: bold;
-        padding: 3px 8px;
-        border-radius: 5px;
-      }
+    .status {
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
 
-      &.status-completed {
-        background-color: #4CAF50;
-      }
+    &.status-completed {
+      background-color: #4caf50; /* Green for completed */
+    }
 
-      &.status-pending {
-        background-color: #FFC107;
-      }
+    &.status-pending {
+      background-color: #ffc107; /* Yellow for pending */
     }
   }
 
@@ -84,6 +89,6 @@
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    color: #F0E193;
+    color: white; /* White text */
   }
-
+}

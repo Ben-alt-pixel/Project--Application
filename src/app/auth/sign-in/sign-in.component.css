@@ -19,6 +19,8 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
+
 }
 
 /* Auth Card Styling */
@@ -27,6 +29,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   width: 70%;
   display: flex;
   justify-content: center;
