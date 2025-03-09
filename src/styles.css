@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  background-color:  #F0E193;
+  background-image: url('/leaves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 24px;
 }

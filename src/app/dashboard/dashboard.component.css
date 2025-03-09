@@ -7,7 +7,7 @@
 .dashboard-card {
   width: 80%;
   background-color: #4cab72; /* Using the green from the first CSS */
-  color: white; /* White text for contrast */
+  color: black; /* White text for contrast */
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@
 
     button {
       background-color: #ffffff; /* White buttons */
-      color: #4cab72; /* Green text */
+      color: black; /* Green text */
       font-weight: bold;
       border: none;
       padding: 12px 24px;
@@ -40,7 +40,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #7a1b26; /* Darker green on hover */
+        background-color: #577a1b; /* Darker green on hover */
         color: white; /* White text on hover */
       }
     }
@@ -58,7 +58,7 @@
 
     .project-card {
       background-color: #ffffff; /* White background for cards */
-      color: #4cab72; /* Green text */
+      color: black; /* Green text */
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

@@ -7,27 +7,27 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background-color: #F0E193; /* Golden Sand */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: #4cab72; /* Green from the first file */
   margin: 0;
 }
 
 /* Container Styling */
 .container {
-  max-width: 500px;
-  width: 100%;
-  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Auth Card Styling */
 .auth-card {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 16px;
   padding: 24px;
   position: relative;
+  width: 40rem;
+  height: 30rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,7 +39,7 @@ body {
   left: -10px;
   right: -10px;
   bottom: -10px;
-  border: 4px solid #5C0E14; /* Deep Burgundy */
+  border: 4px solid #4cab72; /* Green border from first CSS */
   border-radius: 20px;
   z-index: -1;
 }
@@ -48,7 +48,7 @@ body {
 mat-card-title {
   font-size: 24px;
   font-weight: bold;
-  color: #5C0E14; /* Deep Burgundy */
+  color: #ffffff; /* White - consistent with first CSS */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -61,7 +61,7 @@ mat-card-title {
 
 .mat-label {
   font-size: 14px;
-  color: #5C0E14; /* Deep Burgundy */
+  color: #ffffff; /* White */
 }
 
 input.mat-input-element,
@@ -69,14 +69,14 @@ textarea.mat-input-element {
   font-size: 16px;
   padding: 8px;
   border-radius: 4px;
-  background-color: #F0E193; /* Golden Sand */
-  color: #5C0E14; /* Deep Burgundy */
+  background-color: #4cab72; /* Green background */
+  color: white; /* White text for input fields */
   border: none;
 }
 
 input.mat-input-element:focus,
 textarea.mat-input-element:focus {
-  outline: 2px solid #5C0E14; /* Deep Burgundy focus */
+  outline: 2px solid #ffffff; /* White outline on focus */
 }
 
 .mat-error {
@@ -89,13 +89,13 @@ textarea.mat-input-element:focus {
 .mat-select {
   width: 100%;
   padding: 8px;
-  background-color: #F0E193; /* Golden Sand */
-  color: #5C0E14; /* Deep Burgundy */
+  background-color: #4cab72; /* Green */
+  color: white; /* White text in the dropdown */
   border: none;
 }
 
 .mat-select-arrow {
-  color: #5C0E14; /* Deep Burgundy */
+  color: white; /* White arrow */
 }
 
 /* Button Styling */
@@ -110,28 +110,28 @@ button.mat-raised-button {
 }
 
 button.mat-primary {
-  background-color: #5C0E14; /* Deep Burgundy */
-  color: #F0E193; /* Golden Sand */
+  background-color: #4cab72; /* Green background for primary button */
+  color: white; /* White text */
 }
 
 button.mat-primary:hover:not([disabled]) {
-  background-color: #7A1B26; /* Darker shade of Deep Burgundy */
+  background-color: #307a1b; /* Darker green when hovering */
 }
 
 button.cancel-btn {
   background-color: transparent;
-  color: #5C0E14; /* Deep Burgundy */
+  color: #ab4c57; /* Green text for cancel button */
   font-weight: bold;
-  border: 2px solid #5C0E14; /* Deep Burgundy */
+  border: 2px solid #4cab72; /* Green border */
   margin-left: 8px;
 }
 
 button.cancel-btn:hover {
-  background-color: #F0E193; /* Golden Sand */
-  color: #5C0E14; /* Deep Burgundy */
+  background-color: #ffffff; /* White background */
+  color: #4cab72; /* Green text on hover */
 }
 
 /* Spacing Classes */
 .mt-4 {
-  margin-top: 16px;
+  margin-top: 30px;
 }
